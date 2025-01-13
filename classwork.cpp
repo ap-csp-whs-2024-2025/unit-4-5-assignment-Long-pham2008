@@ -1,36 +1,53 @@
-#include <iostream>  // std::cin, std::cout
-#include <string>    // std::string, std::getline
-#include <vector>    // std::vector
-
-template <typename T>    // no need to worry about this; Mr. Vu is using this to make teaching easier
-void displayList(std::vector<T> const &v);
+#include <vector>
+#include <iostream>
+#include <string>
 
 int main()
 {
-    // You can follow along with any code in class here
+// Task 1
+std::vector<int> integers = {0, 1, 2, 3, 4, 5, 6};
+std::vector<double> decimal = {2.5, 3.4, 4.2, 6.7, 10.2};
+std::vector<std::string> fruits = {"apple", "banana", "orange", "grapefruit", "coconut"};
 
-    
-    return 0;
+//Task 2
+std::vector<int> integers = {0, 1, 2, 3, 4, 5, 6};
+int x = 0;
+while (x <= integers.size());
+{
+     if (integers[x] % 2 == 0);
+    { 
+     std::cout << integers[x] << "";
+    }
+    x = x + 1;
 }
 
-
-
-
-
-// ignore everything down here
-template <typename T>
-void displayList(std::vector<T> const &v)
+//Task 3
+std::vector<std::string> fruits = {"apple", "banana", "orange", "grapefruit", "coconut"};
+int y = 0;
+while (y <= fruits.size())
 {
-    if (v.empty())
-    {
-        std::cout << "[]\n";
-        return;
-    }
+    std::cout << fruits[x] << "";
+    y = y + 1;
+}
+fruits.push_back(Long);
+while ( y <= fruits.size())
+{
+    std::cout << fruits[y] << "",
+    y = y + 1;
+}
 
-    std::cout << "[";
-    for (int i = 0; i < v.size()-1; ++i)
-    {
-        std::cout << v[i] << ", ";
-    }
-    std::cout << v.back() << "]\n";
+//Task 4
+std::vector<double> decimal = {2.5, 3.4, 4.2, 6.7, 10.2};
+int z = 0;
+while (z <= decimal.size())
+{
+    std::cout << decimal[z] << "";
+    z = z + 1;
+}
+decimal.pop_back();
+while ( z <= decimal.size())
+{
+    std::cout << decimal[z] << "";
+    z = z + 1;
+}
 }
